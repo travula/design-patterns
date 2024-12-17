@@ -14,7 +14,9 @@ public class DuckSimulator {
         rd.performQuack();
         rd.performFly();
         rd.setFlyBehavior(new FlyWithWings());
-        rd.performFly();        
+        rd.performFly();
+
+        NewReadHeadDuck nrd = new NewReadHeadDuck();
         
     };
 

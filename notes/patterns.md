@@ -11,6 +11,22 @@ reading the book - `Head First Design Patterns`.
   interchangeable.
 - The pattern lets the behavior or the algorithm vary
   independently from the clients that use it.
+- When is it used? 
+  1. When inheritance is not the answer, that all the
+     subclasses do not have the same behaviour that is
+     supposed to be inherited.
+  2. When interfaces are also not the solution. When there
+     is a deluge of subclasses, by making implementation for
+     all the subclasses, code reuse is lost.
+     
+ - [Reference Implementation](../src/com/dp/sp/DuckSimulator.java)
+     
+- The strategy is to use delegation.  Different behaviours
+  are implemented and either during constructing an object
+  or during the lifetime of a certain object, a certain
+  behaviour is absorbed into the object by delegating the
+  expression of the required beviour by creating an object
+  the implemented behaviour.
 
 # Observer Pattern
 - In this pattern, the state is owned by the subject
